@@ -1,6 +1,25 @@
-<head>
-959859
-</head>
-<body>
 
-</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <script>
+function raschitat(){
+ploshyad  = document.getElementById('ploshyad').value;
+if(ploshyad == ""){
+alert("Вы не указали площадь");}
+else {
+cena = 440;
+stoimost = ploshyad*cena;
+document.getElementById('stoimost').innerHTML = "Стоимость равна: "+ stoimost +" р."};
+}
+        </script>
+
+    </head>
+    <body>
+      <h1>Расчет стоимости</h1>
+<input type="text" id="ploshyad" value="" placeholder="Укажите площадь">
+<button onclick="raschitat()">Рассчитать стоимость</button>
+<div id="stoimost"></div>
+    </body>
+</html>
