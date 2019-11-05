@@ -1,9 +1,8 @@
-var nam = 2000;
-var procent = 20;
-var result;
-function RaschetProcenta() {
-  result = nam / 100;
+function raschetProcenta() {
+  var procent = document.getElementById('procentZn').value;
+  var nam = document.getElementById('chislo').value;
+  var sumSale = nam / 100 * procent;
+  var result = nam - sumSale;
+  console.log(result);
 }
-RaschetProcenta();
-console.log(result);
-k
+raschetProcenta();
