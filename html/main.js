@@ -6,3 +6,4 @@ function raschetProcenta() {
   console.log(result);
 }
 raschetProcenta();
+s
