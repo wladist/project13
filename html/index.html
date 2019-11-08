@@ -13,27 +13,28 @@
  <div class="container aligin-around">
    <div class="row justify-content-center">
        <div class="col-mid">
-           <h1>Результат</h1>
+           <h1>Результат </h1>
+           <h2 id = "otvet"></h2>
        </div>
    </div>
      <form>
   <div class="form-row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="Число">
+      <input type="text" class="form-control" id = numberIn placeholder="Число">
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Процент">
+      <input type="text" class="form-control" id = procentIn placeholder="Процент">
     </div>
   </div>
 </form>
 <div class="row justify-content-center align-items-center">
   <div class="col-mid">
-   <button type="button" class="btn btn-primary">Рассчитать</button>
+   <button type="button" onclick="RaschetProcenta()" class="btn btn-primary">Рассчитать</button>
   </div>
 </div>
    </div>
 
-    <!-- Optional JavaScrdipt! -->
+    <!-- Optional JavaScript! -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

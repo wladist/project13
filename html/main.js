@@ -1,9 +1,11 @@
-var nam = 2000;
-var procent = 20;
-var result;
+let result;
+let sumProcent;
 function RaschetProcenta() {
-  result = nam / 100;
+  procent = document.getElementById('procentIn').value;
+  num = document.getElementById('numberIn').value;
+  sumProcent = num / 100 * procent;
+  result = num - sumProcent;
+  document.getElementById('otvet').innerHTML = result;
+
 }
-RaschetProcenta();
-console.log(result);
-s
+document.getElementById('button').innerHTML = "RaschetProcenta()"
